@@ -297,6 +297,15 @@ define Device/luxul-xbr-4500
 endef
 TARGET_DEVICES += luxul-xbr-4500
 
+define Device/luxul-xwr-3100
+  $(Device/luxul)
+  DEVICE_TITLE := Luxul XWR-3100
+  DEVICE_PACKAGES := $(BRCMFMAC_4366C0) $(USB3_PACKAGES)
+  DEVICE_DTS := bcm47094-luxul-xwr-3100
+  LUXUL_BOARD := XWR-3100
+endef
+TARGET_DEVICES += luxul-xwr-3100
+
 define Device/luxul-xwr-3150
   $(Device/luxul)
   DEVICE_TITLE := Luxul XWR-3150
